@@ -1,0 +1,151 @@
+type: api
+version: v4.2.0
+data:
+  id: 0c5e6612-6c8b-46c1-b6ee-20ce893b3511
+  name: Hamada-APi
+  context: /abc/ss
+  version: v1
+  provider: admin
+  lifeCycleStatus: PUBLISHED
+  responseCachingEnabled: false
+  cacheTimeout: 300
+  hasThumbnail: false
+  isDefaultVersion: false
+  isRevision: true
+  revisionedApiId: b17f7f60-814d-43f4-a174-37cfc0dd9fae
+  revisionId: 47
+  enableSchemaValidation: false
+  enableSubscriberVerification: false
+  type: HTTP
+  transport:
+   - http
+   - https
+  tags: []
+  policies:
+   - Unlimited
+  authorizationHeader: Authorization
+  securityScheme:
+   - oauth2
+   - oauth_basic_auth_api_key_mandatory
+  visibility: PUBLIC
+  visibleRoles: []
+  visibleTenants: []
+  mediationPolicies: []
+  subscriptionAvailability: CURRENT_TENANT
+  subscriptionAvailableTenants: []
+  additionalProperties:
+   -
+    name: aaa
+    value: ddd
+    display: true
+  additionalPropertiesMap:
+    aaa__display:
+      name: aaa
+      value: ddd
+      display: false
+  accessControl: NONE
+  accessControlRoles: []
+  businessInformation: {}
+  corsConfiguration:
+    corsConfigurationEnabled: false
+    accessControlAllowOrigins:
+     - '*'
+    accessControlAllowCredentials: false
+    accessControlAllowHeaders:
+     - authorization
+     - Access-Control-Allow-Origin
+     - Content-Type
+     - SOAPAction
+     - apikey
+     - Internal-Key
+    accessControlAllowMethods:
+     - GET
+     - PUT
+     - POST
+     - DELETE
+     - PATCH
+     - OPTIONS
+  websubSubscriptionConfiguration:
+    enable: false
+    secret: ""
+    signingAlgorithm: SHA1
+    signatureHeader: x-hub-signature
+  createdTime: "1709594837650"
+  lastUpdatedTime: 2024-03-05 02:27:17.65
+  endpointConfig:
+    endpoint_type: http
+    sandbox_endpoints:
+      template_not_supported: false
+      url: http://pc02:8290/emp
+    failOver: false
+    production_endpoints:
+      template_not_supported: false
+      url: http://pc02:8290/emp
+  endpointImplementationType: ENDPOINT
+  scopes: []
+  operations:
+   -
+    id: ""
+    target: /ddd
+    verb: GET
+    authType: Application & Application User
+    throttlingPolicy: Unlimited
+    scopes: []
+    usedProductIds: []
+    operationPolicies:
+      request:
+       -
+        policyName: debugRequestFlow
+        policyVersion: v1
+        policyId: 22f25688-97ec-4830-9cc0-049843aa8af9
+        parameters: {}
+       -
+        policyName: xxxx
+        policyVersion: v1
+        policyId: ad2f17e8-abf5-46cb-a809-c69eb2b6bdad
+        parameters: {}
+       -
+        policyName: xxxx
+        policyVersion: v1
+        policyId: ad2f17e8-abf5-46cb-a809-c69eb2b6bdad
+        parameters: {}
+       -
+        policyName: debugRequestFlow
+        policyVersion: v1
+        policyId: 22f25688-97ec-4830-9cc0-049843aa8af9
+        parameters: {}
+      response: []
+      fault: []
+   -
+    id: ""
+    target: /testxxx
+    verb: POST
+    authType: Application & Application User
+    throttlingPolicy: Unlimited
+    scopes: []
+    usedProductIds: []
+    operationPolicies:
+      request:
+       -
+        policyName: xxxx
+        policyVersion: v1
+        policyId: ad2f17e8-abf5-46cb-a809-c69eb2b6bdad
+        parameters: {}
+       -
+        policyName: debugRequestFlow
+        policyVersion: v1
+        policyId: 22f25688-97ec-4830-9cc0-049843aa8af9
+        parameters: {}
+      response: []
+      fault: []
+  categories: []
+  keyManagers:
+   - all
+  advertiseInfo:
+    advertised: false
+    apiOwner: admin
+    vendor: WSO2
+  gatewayVendor: wso2
+  gatewayType: wso2/synapse
+  asyncTransportProtocols: []
+  organizationId: carbon.super
